@@ -27,6 +27,12 @@
 *.exe
 *.out
 *.app
+*.x
+
+#Final Files
+*.iso
+*.krn
+
 
 # Folders
 !/.obj
@@ -36,6 +42,12 @@
 !/.vscode
 /.vscode/*
 
+!/.grub-files
+/.grub-files/*
+
+!/.emulador
+/.emulador/*
 
 # Especific Files
 include_paths.bat
+makefile.my-pc.mk

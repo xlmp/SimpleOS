@@ -29,6 +29,9 @@ endif
 ifeq ($(ENVIRONMENT),WINDOWS)
 cp = copy 
 OSMSG = Compilando em Ambiente WINDOWS
+GRUB-MKIMAGEM := grub-mkimage.exe
+MK-ISOFS := mkisofs
+MK-ISOFS-FLAGS :=  -no-emul-boot -boot-load-size 12 -boot-info-table
 
 else
 cp = cp
