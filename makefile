@@ -11,7 +11,6 @@ include make-config/objetos.compile.mk
 o QEMU, VirtualBox e o BOCH, configurações são especificas para \
 cada computador.
 
-include makefile.my-pc.mk
 
 kernel-file = .obj/simpleOS.krn
 linker-file = source/linker.ld
@@ -44,3 +43,4 @@ $(SimpleOS-iso):
 	@$(MK-ISOFS) -R -b SimpleOS/grub/core.img $(MK-ISOFS-FLAGS) -o ./$@ ./.root	
 	@echo ----- Aquico ISO Criado com Sucesso --
 
+include makefile.my-pc.mk
