@@ -20,7 +20,8 @@ loader:
     push %eax
     push %ebx
     call kmain
-
+_loop1:
+    jmp _loop1
 
 _stop:
     cli

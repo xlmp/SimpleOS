@@ -6,7 +6,8 @@ CCNAME := Usando Compilador LLVM
 CCPARAMS := -m32 -I$(INCLUDEDIR) -fno-use-cxa-atexit -nostdlib -fno-builtin -fno-rtti -fno-exceptions -Wno-write-strings \
 -fpermissive \
 -march=i386 --target=i386-pc-none-elf -ffreestanding \
--fasm-blocks -std=c++14
+-fasm-blocks -std=c++14 \
+-nostdlib -nostdinc 
 AS = clang 
 ASPARAMS = -m32 -march=i386 --target=i386-pc-none-elf -ffreestanding
 
